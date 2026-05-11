@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio d'Ikram Ezziouani — Ingénieure en Cybersécurité" />
+  <title>Ikram Ezziouani — Cybersécurité</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">IE</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="cv.pdf" class="nav-cv" target="_blank"><i class="fas fa-file-arrow-down"></i> CV</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Bonjour, je suis</p>
+      <h1>Ikram <span class="highlight">Ezziouani</span></h1>
+      <p class="hero-subtitle"><span class="typed-text"></span><span class="cursor">|</span></p>
+      <p class="hero-desc">Étudiante ingénieure en sécurité des systèmes d'information (4ᵉ année) à la FSTG – Université Cadi Ayyad de Marrakech. À la recherche d'un stage PFA de deux mois.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn">Voir mes projets</a>
+        <a href="cv.pdf" class="btn outline" target="_blank"><i class="fas fa-download"></i> Télécharger CV</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/ikram856" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ikram-ezziouani-b7737b25b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:i.ezziouani2988@uca.ac.ma" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+212779974217" aria-label="Téléphone"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hex-grid">
+        <div class="hex"><i class="fas fa-shield-halved"></i></div>
+        <div class="hex"><i class="fas fa-lock"></i></div>
+        <div class="hex"><i class="fas fa-bug"></i></div>
+        <div class="hex"><i class="fas fa-network-wired"></i></div>
+        <div class="hex"><i class="fab fa-linux"></i></div>
+        <div class="hex"><i class="fas fa-code"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="about">
+    <h2><span>À propos</span></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Étudiante ingénieure en sécurité des systèmes d'information (4ᵉ année), passionnée par la cybersécurité, avec de solides compétences en sécurité réseau, analyse de vulnérabilités et protection des systèmes.</p>
+        <p>Motivée, rigoureuse et en veille constante, je recherche un <strong>stage PFA de deux mois</strong> pour mettre en pratique mes connaissances dans un environnement professionnel stimulant.</p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">4</span><span class="stat-label">Projets</span></div>
+          <div class="stat"><span class="stat-num">4ᵉ</span><span class="stat-label">Année Ingénieur</span></div>
+          <div class="stat"><span class="stat-num">3</span><span class="stat-label">Langues</span></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="info-line"><i class="fas fa-graduation-cap"></i><span>FSTG – Université Cadi Ayyad, Marrakech</span></div>
+        <div class="info-line"><i class="fas fa-shield-halved"></i><span>Ingénierie Cybersécurité</span></div>
+        <div class="info-line"><i class="fas fa-location-dot"></i><span>Marrakech, Maroc</span></div>
+        <div class="info-line"><i class="fas fa-phone"></i><span>+212 779 974 217</span></div>
+        <div class="info-line"><i class="fas fa-language"></i><span>Arabe · Français · Anglais</span></div>
+        <div class="info-line"><i class="fas fa-circle-check" style="color:#00c896"></i><span>Disponible pour stage PFA (2 mois)</span></div>
+        <a href="cv.pdf" class="btn" style="margin-top:1.5rem;width:100%;text-align:center;justify-content:center;" target="_blank">
+          <i class="fas fa-file-arrow-down"></i> Télécharger mon CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills">
+    <h2><span>Compétences</span></h2>
+
+    <div class="skills-category">
+      <h3 class="skills-label">Sécurité</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fas fa-shield-halved"></i><span>Cybersécurité</span></div>
+        <div class="skill-card"><i class="fas fa-bug"></i><span>Pentest</span></div>
+        <div class="skill-card"><i class="fas fa-fire"></i><span>pfSense / Firewall</span></div>
+        <div class="skill-card"><i class="fas fa-magnifying-glass"></i><span>Wireshark</span></div>
+        <div class="skill-card"><i class="fas fa-terminal"></i><span>Kali Linux / Nmap</span></div>
+        <div class="skill-card"><i class="fas fa-lock"></i><span>Cryptographie</span></div>
+        <div class="skill-card"><i class="fas fa-user-secret"></i><span>OSINT</span></div>
+        <div class="skill-card"><i class="fas fa-flag"></i><span>CTF</span></div>
+      </div>
+    </div>
+
+    <div class="skills-category" style="margin-top:2rem;">
+      <h3 class="skills-label">Développement</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+        <div class="skill-card"><i class="fab fa-php"></i><span>PHP / Laravel</span></div>
+        <div class="skill-card"><i class="fab fa-java"></i><span>Java / Spring Boot</span></div>
+        <div class="skill-card"><i class="fab fa-react"></i><span>React.js</span></div>
+        <div class="skill-card"><i class="fas fa-database"></i><span>MySQL / Oracle</span></div>
+        <div class="skill-card"><i class="fab fa-linux"></i><span>Linux</span></div>
+        <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git / GitLab</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expérience -->
+  <section id="experience">
+    <h2><span>Expérience</span></h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3>Cybersecurity Intern</h3>
+              <span class="timeline-company"><i class="fas fa-building"></i> Marsa Maroc</span>
+            </div>
+            <span class="timeline-date">Été 2024</span>
+          </div>
+          <ul>
+            <li>Configuration et déploiement de <strong>pfSense</strong> pour filtrer les flux réseau suspects.</li>
+            <li>Analyse du trafic réseau et mise en place de règles de sécurité avancées.</li>
+          </ul>
+          <div class="timeline-tags"><span>pfSense</span><span>Firewall</span><span>Sécurité Réseau</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects">
+    <h2><span>Projets</span></h2>
+    <div class="projects-grid">
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-tag">Cybersécurité</div>
+          <i class="fas fa-folder-open card-icon"></i>
+        </div>
+        <h3>Cybersecurity Lab Projects</h3>
+        <p>Simulation de Rainbow Table, recherche sur la sécurité du Deep/Dark Web, et conception d'un pare-feu Linux avec <strong>iptables</strong>.</p>
+        <div class="card-tech"><span>iptables</span><span>Linux</span><span>Cryptographie</span></div>
+        <div class="card-links">
+          <a href="https://github.com/ikram856" class="btn-sm outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-tag">Sécurité Réseau</div>
+          <i class="fas fa-folder-open card-icon"></i>
+        </div>
+        <h3>Configuration pfSense & Sécurité Réseau</h3>
+        <p>Déploiement d'un pare-feu pfSense pour filtrer les flux réseau suspects, sécuriser l'infrastructure et analyser le trafic avec Wireshark.</p>
+        <div class="card-tech"><span>pfSense</span><span>Wireshark</span><span>TCP/IP</span></div>
+        <div class="card-links">
+          <a href="https://github.com/ikram856" class="btn-sm outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-tag">Développement Web</div>
+          <i class="fas fa-folder-open card-icon"></i>
+        </div>
+        <h3>Music Streaming Web Application</h3>
+        <p>Plateforme musicale avec Laravel (MVC), authentification, gestion des rôles, playlists et système Premium avec base de données relationnelle.</p>
+        <div class="card-tech"><span>Laravel</span><span>MySQL</span><span>PHP</span><span>MVC</span></div>
+        <div class="card-links">
+          <a href="https://github.com/ikram856" class="btn-sm outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-tag">IA & Santé</div>
+          <i class="fas fa-folder-open card-icon"></i>
+        </div>
+        <h3>Lung Cancer Detection System</h3>
+        <p>Application web de détection de cancer pulmonaire à partir d'images médicales, axée sur l'intelligence artificielle et l'analyse de données.</p>
+        <div class="card-tech"><span>JavaScript</span><span>IA</span><span>Médical</span></div>
+        <div class="card-links">
+          <a href="https://github.com/ikram856" class="btn-sm outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2><span>Certifications</span></h2>
+    <div class="certs-grid">
+      <div class="cert-card"><i class="fas fa-certificate"></i><span>Introduction à la Cybersécurité — Cisco / IBM</span></div>
+      <div class="cert-card"><i class="fas fa-certificate"></i><span>Cybersecurity Essentials — Cisco</span></div>
+      <div class="cert-card"><i class="fas fa-certificate"></i><span>Ethical Hacking — Cisco / Coursera</span></div>
+      <div class="cert-card"><i class="fas fa-certificate"></i><span>Introduction à Python</span></div>
+      <div class="cert-card"><i class="fas fa-certificate"></i><span>Cloud Computing</span></div>
+      <div class="cert-card"><i class="fas fa-certificate"></i><span>Git & GitHub</span></div>
+      <div class="cert-card"><i class="fas fa-certificate"></i><span>SQL & API Management</span></div>
+      <div class="cert-card"><i class="fas fa-certificate"></i><span>Intelligence Artificielle pour débutants</span></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2><span>Contact</span></h2>
+    <p class="contact-subtitle">Une opportunité de stage ou une question ? Écris-moi directement.</p>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <a href="mailto:i.ezziouani2988@uca.ac.ma" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div><strong>Email universitaire</strong><span>i.ezziouani2988@uca.ac.ma</span></div>
+        </a>
+        <a href="mailto:ezziouani.ikram@gmail.com" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div><strong>Email personnel</strong><span>ikram.ezziouani@gmail.com</span></div>
+        </a>
+        <a href="tel:+212779974217" class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div><strong>Téléphone</strong><span>+212 779 974 217</span></div>
+        </a>
+        <a href="https://github.com/ikram856" target="_blank" class="contact-item">
+          <i class="fab fa-github"></i>
+          <div><strong>GitHub</strong><span>github.com/ikramezziouani</span></div>
+        </a>
+        <a href="https://www.linkedin.com/in/ikram-ezziouani-b7737b25b/" target="_blank" class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <div><strong>LinkedIn</strong><span>Ikram Ezziouani</span></div>
+        </a>
+        <a href="cv.pdf" target="_blank" class="contact-item">
+          <i class="fas fa-file-pdf"></i>
+          <div><strong>CV</strong><span>Télécharger mon CV (PDF)</span></div>
+        </a>
+      </div>
+      <form id="contact-form">
+        <input type="text" placeholder="Votre nom" required />
+        <input type="email" placeholder="Votre email" required />
+        <textarea placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit" class="btn" style="width:100%;justify-content:center;">Envoyer le message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Ikram Ezziouani — Ingénieure en Cybersécurité</span>
+      <div class="footer-socials">
+        <a href="https://github.com/ikram856" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ikram-ezziouani-b7737b25b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:i.ezziouani2988@uca.ac.ma"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
