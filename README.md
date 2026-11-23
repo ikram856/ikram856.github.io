@@ -1,14 +1,7 @@
-# Portfolio — Ikram Ezziouani
+# 🌐 Portfolio — Ikram Ezziouani
 
-Portfolio personnel déployé sur GitHub Pages.
+**Live:** https://ikram856.github.io
 
-## Déploiement
+Personal portfolio of a 5th-year IT Security engineering student (SOC / blue team): projects, skills and CV.
 
-1. Crée un repo GitHub nommé `ikram856.github.io`
-2. Push le contenu du dossier `portfolio/` à la racine du repo
-3. Va dans **Settings → Pages → Source → main branch**
-4. Ton portfolio sera accessible sur `https://ikram856.github.io`
-
-## Ajouter ton CV
-
-Place ton fichier CV nommé `cv.pdf` à la racine du projet (même dossier que `index.html`).
+Built with HTML, CSS and JavaScript, hosted on GitHub Pages.
