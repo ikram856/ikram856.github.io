@@ -1,271 +1,221 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio d'Ikram Ezziouani — Ingénieure en Cybersécurité" />
-  <title>Ikram Ezziouani — Cybersécurité</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ikram Ezziouani — Sécurité des systèmes d'information</title>
+  <meta name="description" content="Ikram Ezziouani, étudiante en 5e année du cycle ingénieur Sécurité des systèmes d'information (FSTG Marrakech). SOC, détection d'incidents, sécurité réseau.">
+  <meta property="og:title" content="Ikram Ezziouani — Sécurité des systèmes d'information">
+  <meta property="og:description" content="Étudiante ingénieure en 5e année, orientée SOC et blue team : Wazuh, pfSense, MITRE ATT&CK.">
+  <meta property="og:url" content="https://ikram856.github.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav id="navbar">
-    <div class="nav-logo">IE</div>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#experience">Expérience</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="cv.pdf" class="nav-cv" target="_blank"><i class="fas fa-file-arrow-down"></i> CV</a></li>
+<header class="top">
+  <div class="wrap top-inner">
+    <a href="#" class="mark">Ikram Ezziouani</a>
+    <nav aria-label="Sections">
+      <a href="#profil">Profil</a>
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero-text">
+      <h1>Ikram Ezziouani</h1>
+      <p class="role">Étudiante ingénieure en sécurité des systèmes d'information, 5<sup>e</sup> année — orientée SOC et détection d'incidents.</p>
+      <p class="status"><span class="dot" aria-hidden="true"></span>Ouverte à un stage de fin d'études (PFE) et à une poursuite d'études en master cybersécurité.</p>
+      <div class="actions">
+        <a class="btn primary" href="cv.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+        <a class="btn" href="mailto:ezziouani.ikram@gmail.com">M'écrire</a>
+      </div>
+    </div>
+
+    <figure class="log" aria-labelledby="log-caption">
+      <figcaption id="log-caption">
+        <span>wazuh-manager · alertes du lab SOC</span>
+        <a href="https://github.com/ikram856/soc-wazuh-lab" target="_blank" rel="noopener">Voir le lab</a>
+      </figcaption>
+      <table>
+        <thead>
+          <tr><th>Règle</th><th>MITRE</th><th>Détection</th><th class="num">Alertes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>5760, 5503</td><td>T1110</td><td>Brute force SSH (Hydra)</td><td class="num">11</td></tr>
+          <tr class="crit"><td>100100–101</td><td>T1046</td><td>Scan de ports Nmap — règle maison, niveau 15</td><td class="num">10</td></tr>
+          <tr><td>550, 553, 554</td><td>T1565</td><td>Fichiers modifiés / supprimés (FIM + Auditd)</td><td class="num">17</td></tr>
+          <tr><td>5902, 5402</td><td>T1136</td><td>Création de compte non autorisée</td><td class="num">5</td></tr>
+          <tr class="resp"><td>5551</td><td>T1110</td><td>Active Response : IP de l'attaquant bloquée 600 s</td><td class="num">3</td></tr>
+        </tbody>
+      </table>
+    </figure>
+  </section>
+
+  <section id="profil" class="wrap section">
+    <h2>Profil</h2>
+    <div class="cols">
+      <div class="prose">
+        <p>Je suis en dernière année du cycle ingénieur Sécurité des systèmes d'information à la FST de Marrakech (Université Cadi Ayyad). Ce qui m'intéresse le plus, c'est le côté défensif : collecter les bons journaux, écrire des règles de détection, comprendre une alerte et y répondre.</p>
+        <p>Je construis mes propres environnements de test — SIEM, pare-feu, cloud privé — pour reproduire des attaques réelles et vérifier ce qui est réellement détecté. À côté, je développe des applications web complètes, ce qui m'aide à comprendre ce que je protège.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Formation</dt><dd>Cycle ingénieur Sécurité des SI, 5<sup>e</sup> année<br>FSTG, Université Cadi Ayyad</dd></div>
+        <div><dt>Lieu</dt><dd>Marrakech, Maroc</dd></div>
+        <div><dt>Langues</dt><dd>Arabe, français, anglais</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="projets" class="wrap section">
+    <h2>Projets</h2>
+
+    <article class="feature">
+      <div class="feature-head">
+        <h3>Lab SOC avec Wazuh</h3>
+        <a href="https://github.com/ikram856/soc-wazuh-lab" target="_blank" rel="noopener">Code et documentation</a>
+      </div>
+      <p>Un SOC entièrement virtualisé sur un réseau isolé : un serveur Wazuh (manager, indexer, dashboard), deux cibles Linux et Windows, et une machine Kali pour attaquer. Cinq scénarios d'attaque sont joués, détectés et associés à leur technique MITRE ATT&amp;CK.</p>
+      <ul class="points">
+        <li>Règles de détection personnalisées pour les scans Nmap TCP et UDP, à partir des journaux iptables.</li>
+        <li>Surveillance d'intégrité des fichiers sur <code>/etc</code> et <code>/home</code>, enrichie par Auditd (mode whodata).</li>
+        <li>Réponse automatique : blocage de l'adresse IP de l'attaquant après plusieurs échecs SSH.</li>
+      </ul>
+      <p class="tags">Wazuh · Auditd · iptables · Kali Linux · MITRE ATT&amp;CK</p>
+    </article>
+
+    <h3 class="group">Sécurité</h3>
+    <ul class="rows">
+      <li>
+        <h4>Pare-feu pfSense et DMZ</h4>
+        <p>Architecture à trois machines : poste client, pare-feu pfSense et serveur web Ubuntu placé en DMZ. Plan d'adressage, règles de filtrage entre zones et analyse du trafic avec Wireshark.</p>
+        <p class="tags">pfSense · Wireshark · TCP/IP</p>
+      </li>
+      <li>
+        <h4>Cloud privé OpenStack</h4>
+        <p>Déploiement d'OpenStack de trois façons (MicroStack, DevStack, installation manuelle) dans le cadre du module Sécurité Cloud et Blockchain.</p>
+        <p class="tags">OpenStack · Linux · Virtualisation</p>
+      </li>
+      <li>
+        <h4>Travaux de laboratoire</h4>
+        <p>Simulation d'attaque par Rainbow Table, conception d'un pare-feu Linux avec iptables, étude de la sécurité du Deep et du Dark Web.</p>
+        <p class="tags">iptables · Cryptographie · Linux</p>
+      </li>
     </ul>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
-  </nav>
 
-  <!-- Hero -->
-  <section id="hero">
-    <div class="hero-content">
-      <p class="hero-greeting">Bonjour, je suis</p>
-      <h1>Ikram <span class="highlight">Ezziouani</span></h1>
-      <p class="hero-subtitle"><span class="typed-text"></span><span class="cursor">|</span></p>
-      <p class="hero-desc">Étudiante ingénieure en sécurité des systèmes d'information (4ᵉ année) à la FSTG – Université Cadi Ayyad de Marrakech. À la recherche d'un stage PFA de deux mois.</p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn">Voir mes projets</a>
-        <a href="cv.pdf" class="btn outline" target="_blank"><i class="fas fa-download"></i> Télécharger CV</a>
-      </div>
-      <div class="hero-socials">
-        <a href="https://github.com/ikram856" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/ikram-ezziouani-b7737b25b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:i.ezziouani2988@uca.ac.ma" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="tel:+212779974217" aria-label="Téléphone"><i class="fas fa-phone"></i></a>
-      </div>
-    </div>
-    <div class="hero-visual" aria-hidden="true">
-      <div class="hex-grid">
-        <div class="hex"><i class="fas fa-shield-halved"></i></div>
-        <div class="hex"><i class="fas fa-lock"></i></div>
-        <div class="hex"><i class="fas fa-bug"></i></div>
-        <div class="hex"><i class="fas fa-network-wired"></i></div>
-        <div class="hex"><i class="fab fa-linux"></i></div>
-        <div class="hex"><i class="fas fa-code"></i></div>
-      </div>
-    </div>
+    <h3 class="group">Développement</h3>
+    <ul class="rows">
+      <li>
+        <h4><a href="https://github.com/ikram856/agent-prof" target="_blank" rel="noopener">agent-prof</a></h4>
+        <p>Assistant de cours pour élèves de collège : questions, débat et quiz à partir du cours du professeur (PDF, PowerPoint). La clé d'API reste côté serveur, en variable d'environnement.</p>
+        <p class="tags">Node.js · API Gemini</p>
+      </li>
+      <li>
+        <h4><a href="https://e-beldi.vercel.app" target="_blank" rel="noopener">E-beldi</a></h4>
+        <p>Plateforme pour les coopératives artisanales de Marrakech-Safi : catalogue, carte interactive, panier et partenariats avec le tourisme. Projet d'équipe.</p>
+        <p class="tags">React · Vite · Leaflet</p>
+      </li>
+      <li>
+        <h4>Streaming musical</h4>
+        <p>Application web en architecture MVC : authentification, gestion des rôles, playlists et offre Premium.</p>
+        <p class="tags">Laravel · PHP · MySQL</p>
+      </li>
+      <li>
+        <h4>Détection du cancer du poumon</h4>
+        <p>Application web d'aide à la détection à partir d'images médicales, basée sur un modèle d'intelligence artificielle.</p>
+        <p class="tags">JavaScript · IA</p>
+      </li>
+    </ul>
+    <p class="more"><a href="https://github.com/ikram856" target="_blank" rel="noopener">Tous mes dépôts sur GitHub</a></p>
   </section>
 
-  <!-- À propos -->
-  <section id="about">
-    <h2><span>À propos</span></h2>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>Étudiante ingénieure en sécurité des systèmes d'information (4ᵉ année), passionnée par la cybersécurité, avec de solides compétences en sécurité réseau, analyse de vulnérabilités et protection des systèmes.</p>
-        <p>Motivée, rigoureuse et en veille constante, je recherche un <strong>stage PFA de deux mois</strong> pour mettre en pratique mes connaissances dans un environnement professionnel stimulant.</p>
-        <div class="about-stats">
-          <div class="stat"><span class="stat-num">4</span><span class="stat-label">Projets</span></div>
-          <div class="stat"><span class="stat-num">4ᵉ</span><span class="stat-label">Année Ingénieur</span></div>
-          <div class="stat"><span class="stat-num">3</span><span class="stat-label">Langues</span></div>
+  <section id="parcours" class="wrap section">
+    <h2>Parcours</h2>
+    <ol class="timeline">
+      <li>
+        <span class="when">En cours</span>
+        <div>
+          <h4>Cycle ingénieur Sécurité des systèmes d'information</h4>
+          <p>FST Marrakech, Université Cadi Ayyad — actuellement en 5<sup>e</sup> année.</p>
         </div>
-      </div>
-      <div class="about-card">
-        <div class="info-line"><i class="fas fa-graduation-cap"></i><span>FSTG – Université Cadi Ayyad, Marrakech</span></div>
-        <div class="info-line"><i class="fas fa-shield-halved"></i><span>Ingénierie Cybersécurité</span></div>
-        <div class="info-line"><i class="fas fa-location-dot"></i><span>Marrakech, Maroc</span></div>
-        <div class="info-line"><i class="fas fa-phone"></i><span>+212 779 974 217</span></div>
-        <div class="info-line"><i class="fas fa-language"></i><span>Arabe · Français · Anglais</span></div>
-        <div class="info-line"><i class="fas fa-circle-check" style="color:#00c896"></i><span>Disponible pour stage PFA (2 mois)</span></div>
-        <a href="cv.pdf" class="btn" style="margin-top:1.5rem;width:100%;text-align:center;justify-content:center;" target="_blank">
-          <i class="fas fa-file-arrow-down"></i> Télécharger mon CV
-        </a>
-      </div>
-    </div>
+      </li>
+      <li>
+        <span class="when">Été 2024</span>
+        <div>
+          <h4>Stage en cybersécurité — Marsa Maroc</h4>
+          <p>Configuration et déploiement de pfSense pour filtrer les flux réseau suspects, analyse du trafic et mise en place de règles de sécurité.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Avant le cycle</span>
+        <div>
+          <h4>DEUST</h4>
+          <p>Diplôme universitaire préalable à l'entrée en cycle ingénieur.</p>
+        </div>
+      </li>
+    </ol>
   </section>
 
-  <!-- Compétences -->
-  <section id="skills">
-    <h2><span>Compétences</span></h2>
-
-    <div class="skills-category">
-      <h3 class="skills-label">Sécurité</h3>
-      <div class="skills-grid">
-        <div class="skill-card"><i class="fas fa-shield-halved"></i><span>Cybersécurité</span></div>
-        <div class="skill-card"><i class="fas fa-bug"></i><span>Pentest</span></div>
-        <div class="skill-card"><i class="fas fa-fire"></i><span>pfSense / Firewall</span></div>
-        <div class="skill-card"><i class="fas fa-magnifying-glass"></i><span>Wireshark</span></div>
-        <div class="skill-card"><i class="fas fa-terminal"></i><span>Kali Linux / Nmap</span></div>
-        <div class="skill-card"><i class="fas fa-lock"></i><span>Cryptographie</span></div>
-        <div class="skill-card"><i class="fas fa-user-secret"></i><span>OSINT</span></div>
-        <div class="skill-card"><i class="fas fa-flag"></i><span>CTF</span></div>
+  <section id="competences" class="wrap section">
+    <h2>Compétences</h2>
+    <div class="skills">
+      <div>
+        <h3>Détection et réponse</h3>
+        <p>Wazuh (SIEM/XDR), règles de détection, FIM, Auditd, Active Response, MITRE ATT&amp;CK, analyse de journaux</p>
+      </div>
+      <div>
+        <h3>Réseau et offensif</h3>
+        <p>pfSense, iptables, Wireshark, Nmap, Kali Linux, tests d'intrusion, OSINT, CTF</p>
+      </div>
+      <div>
+        <h3>Systèmes et cloud</h3>
+        <p>Linux, administration système, OpenStack, VirtualBox, Docker, GitLab CI</p>
+      </div>
+      <div>
+        <h3>Développement</h3>
+        <p>Python, JavaScript, React, Node.js, FastAPI, PHP / Laravel, Java / Spring Boot, MySQL, Oracle, Git</p>
       </div>
     </div>
 
-    <div class="skills-category" style="margin-top:2rem;">
-      <h3 class="skills-label">Développement</h3>
-      <div class="skills-grid">
-        <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
-        <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
-        <div class="skill-card"><i class="fab fa-php"></i><span>PHP / Laravel</span></div>
-        <div class="skill-card"><i class="fab fa-java"></i><span>Java / Spring Boot</span></div>
-        <div class="skill-card"><i class="fab fa-react"></i><span>React.js</span></div>
-        <div class="skill-card"><i class="fas fa-database"></i><span>MySQL / Oracle</span></div>
-        <div class="skill-card"><i class="fab fa-linux"></i><span>Linux</span></div>
-        <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git / GitLab</span></div>
-      </div>
-    </div>
+    <h3 class="group">Certifications</h3>
+    <ul class="certs">
+      <li>Introduction à la cybersécurité — Cisco / IBM</li>
+      <li>Cybersecurity Essentials — Cisco</li>
+      <li>Ethical Hacking — Cisco / Coursera</li>
+      <li>Cloud Computing</li>
+      <li>Introduction à Python</li>
+      <li>Git &amp; GitHub</li>
+      <li>SQL &amp; API Management</li>
+      <li>Intelligence artificielle pour débutants</li>
+    </ul>
   </section>
 
-  <!-- Expérience -->
-  <section id="experience">
-    <h2><span>Expérience</span></h2>
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <div>
-              <h3>Cybersecurity Intern</h3>
-              <span class="timeline-company"><i class="fas fa-building"></i> Marsa Maroc</span>
-            </div>
-            <span class="timeline-date">Été 2024</span>
-          </div>
-          <ul>
-            <li>Configuration et déploiement de <strong>pfSense</strong> pour filtrer les flux réseau suspects.</li>
-            <li>Analyse du trafic réseau et mise en place de règles de sécurité avancées.</li>
-          </ul>
-          <div class="timeline-tags"><span>pfSense</span><span>Firewall</span><span>Sécurité Réseau</span></div>
-        </div>
-      </div>
-
-    </div>
+  <section id="contact" class="wrap section contact">
+    <h2>Contact</h2>
+    <p class="prose">Pour un stage, une question sur un projet ou une candidature, écrivez-moi directement.</p>
+    <ul class="contact-list">
+      <li><span>E-mail</span><a href="mailto:ezziouani.ikram@gmail.com">ezziouani.ikram@gmail.com</a></li>
+      <li><span>E-mail universitaire</span><a href="mailto:i.ezziouani2988@uca.ac.ma">i.ezziouani2988@uca.ac.ma</a></li>
+      <li><span>Téléphone</span><a href="tel:+212779974217">+212 7 79 97 42 17</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/ikram-ezziouani-b7737b25b/" target="_blank" rel="noopener">linkedin.com/in/ikram-ezziouani</a></li>
+      <li><span>GitHub</span><a href="https://github.com/ikram856" target="_blank" rel="noopener">github.com/ikram856</a></li>
+      <li><span>CV</span><a href="cv.pdf" target="_blank" rel="noopener">Télécharger le PDF</a></li>
+    </ul>
   </section>
+</main>
 
-  <!-- Projets -->
-  <section id="projects">
-    <h2><span>Projets</span></h2>
-    <div class="projects-grid">
+<footer class="wrap foot">
+  <p>© <span id="y">2026</span> Ikram Ezziouani</p>
+</footer>
 
-      <div class="card">
-        <div class="card-header">
-          <div class="card-tag">Cybersécurité</div>
-          <i class="fas fa-folder-open card-icon"></i>
-        </div>
-        <h3>Cybersecurity Lab Projects</h3>
-        <p>Simulation de Rainbow Table, recherche sur la sécurité du Deep/Dark Web, et conception d'un pare-feu Linux avec <strong>iptables</strong>.</p>
-        <div class="card-tech"><span>iptables</span><span>Linux</span><span>Cryptographie</span></div>
-        <div class="card-links">
-          <a href="https://github.com/ikram856" class="btn-sm outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-tag">Sécurité Réseau</div>
-          <i class="fas fa-folder-open card-icon"></i>
-        </div>
-        <h3>Configuration pfSense & Sécurité Réseau</h3>
-        <p>Déploiement d'un pare-feu pfSense pour filtrer les flux réseau suspects, sécuriser l'infrastructure et analyser le trafic avec Wireshark.</p>
-        <div class="card-tech"><span>pfSense</span><span>Wireshark</span><span>TCP/IP</span></div>
-        <div class="card-links">
-          <a href="https://github.com/ikram856" class="btn-sm outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-tag">Développement Web</div>
-          <i class="fas fa-folder-open card-icon"></i>
-        </div>
-        <h3>Music Streaming Web Application</h3>
-        <p>Plateforme musicale avec Laravel (MVC), authentification, gestion des rôles, playlists et système Premium avec base de données relationnelle.</p>
-        <div class="card-tech"><span>Laravel</span><span>MySQL</span><span>PHP</span><span>MVC</span></div>
-        <div class="card-links">
-          <a href="https://github.com/ikram856" class="btn-sm outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-tag">IA & Santé</div>
-          <i class="fas fa-folder-open card-icon"></i>
-        </div>
-        <h3>Lung Cancer Detection System</h3>
-        <p>Application web de détection de cancer pulmonaire à partir d'images médicales, axée sur l'intelligence artificielle et l'analyse de données.</p>
-        <div class="card-tech"><span>JavaScript</span><span>IA</span><span>Médical</span></div>
-        <div class="card-links">
-          <a href="https://github.com/ikram856" class="btn-sm outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2><span>Certifications</span></h2>
-    <div class="certs-grid">
-      <div class="cert-card"><i class="fas fa-certificate"></i><span>Introduction à la Cybersécurité — Cisco / IBM</span></div>
-      <div class="cert-card"><i class="fas fa-certificate"></i><span>Cybersecurity Essentials — Cisco</span></div>
-      <div class="cert-card"><i class="fas fa-certificate"></i><span>Ethical Hacking — Cisco / Coursera</span></div>
-      <div class="cert-card"><i class="fas fa-certificate"></i><span>Introduction à Python</span></div>
-      <div class="cert-card"><i class="fas fa-certificate"></i><span>Cloud Computing</span></div>
-      <div class="cert-card"><i class="fas fa-certificate"></i><span>Git & GitHub</span></div>
-      <div class="cert-card"><i class="fas fa-certificate"></i><span>SQL & API Management</span></div>
-      <div class="cert-card"><i class="fas fa-certificate"></i><span>Intelligence Artificielle pour débutants</span></div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2><span>Contact</span></h2>
-    <p class="contact-subtitle">Une opportunité de stage ou une question ? Écris-moi directement.</p>
-    <div class="contact-wrapper">
-      <div class="contact-info">
-        <a href="mailto:i.ezziouani2988@uca.ac.ma" class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <div><strong>Email universitaire</strong><span>i.ezziouani2988@uca.ac.ma</span></div>
-        </a>
-        <a href="mailto:ezziouani.ikram@gmail.com" class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <div><strong>Email personnel</strong><span>ikram.ezziouani@gmail.com</span></div>
-        </a>
-        <a href="tel:+212779974217" class="contact-item">
-          <i class="fas fa-phone"></i>
-          <div><strong>Téléphone</strong><span>+212 779 974 217</span></div>
-        </a>
-        <a href="https://github.com/ikram856" target="_blank" class="contact-item">
-          <i class="fab fa-github"></i>
-          <div><strong>GitHub</strong><span>github.com/ikramezziouani</span></div>
-        </a>
-        <a href="https://www.linkedin.com/in/ikram-ezziouani-b7737b25b/" target="_blank" class="contact-item">
-          <i class="fab fa-linkedin"></i>
-          <div><strong>LinkedIn</strong><span>Ikram Ezziouani</span></div>
-        </a>
-        <a href="cv.pdf" target="_blank" class="contact-item">
-          <i class="fas fa-file-pdf"></i>
-          <div><strong>CV</strong><span>Télécharger mon CV (PDF)</span></div>
-        </a>
-      </div>
-      <form id="contact-form">
-        <input type="text" placeholder="Votre nom" required />
-        <input type="email" placeholder="Votre email" required />
-        <textarea placeholder="Votre message" rows="5" required></textarea>
-        <button type="submit" class="btn" style="width:100%;justify-content:center;">Envoyer le message</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-inner">
-      <span>© 2026 Ikram Ezziouani — Ingénieure en Cybersécurité</span>
-      <div class="footer-socials">
-        <a href="https://github.com/ikram856" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/ikram-ezziouani-b7737b25b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:i.ezziouani2988@uca.ac.ma"><i class="fas fa-envelope"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
